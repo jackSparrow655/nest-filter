@@ -411,8 +411,34 @@ export const AdvancedFilter = <T,>({
       onOpenChange={onClose}
       title="Advanced Filters"
       description="Refine your dataset using structured logic and multi-type comparisons."
+      footer={
+        <div className="flex w-full justify-between items-center gap-4">
+          <Button
+            variant="ghost"
+            onClick={handleClear}
+            className="text-slate-400 hover:text-red-500 font-black text-[10px] uppercase tracking-widest gap-2"
+          >
+            <FilterX className="h-4 w-4" /> Reset Filters
+          </Button>
+          <div className="flex gap-2">
+            <Button
+              variant="outline"
+              onClick={onClose}
+              className="font-bold h-11 px-6"
+            >
+              Cancel
+            </Button>
+            <Button
+              onClick={handleApply}
+              className="bg-slate-900 font-bold h-11 px-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            >
+              Apply View
+            </Button>
+          </div>
+        </div>
+      }
     >
-      <div className="max-h-[60vh] overflow-y-auto px-1 custom-scrollbar pr-3 pb-32">
+      <div className="max-h-[60vh] overflow-y-auto px-1 custom-scrollbar pr-3 pb-32 inner-content">
         <FilterGroupUI
           group={rootGroup}
           depth={0}
@@ -423,30 +449,6 @@ export const AdvancedFilter = <T,>({
           onUpdateGroupLogic={handleUpdateGroupLogic}
           onRemoveItem={handleRemoveItem}
         />
-      </div>
-      <div className="flex w-full justify-between items-center gap-4">
-        <Button
-          variant="ghost"
-          onClick={handleClear}
-          className="text-slate-400 hover:text-red-500 font-black text-[10px] uppercase tracking-widest gap-2"
-        >
-          <FilterX className="h-4 w-4" /> Reset Filters
-        </Button>
-        <div className="flex gap-2">
-          <Button
-            variant="outline"
-            onClick={onClose}
-            className="font-bold h-11 px-6"
-          >
-            Cancel
-          </Button>
-          <Button
-            onClick={handleApply}
-            className="bg-slate-900 font-bold h-11 px-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
-          >
-            Apply View
-          </Button>
-        </div>
       </div>
     </Dialog>
   );
