@@ -24,13 +24,13 @@
 ## 📺 Visual Preview
 
 ### 🖼️ Modal UI
-![Advanced Filter Modal Placeholder](https://raw.githubusercontent.com/lucide-react/lucide/main/icons/layers.svg) 
+![Advanced Filter Modal Placeholder](https://github.com/jackSparrow655/nest-filter/blob/npmPublish/src/assets/Screenshot%202026-01-19%20225604.png) 
 *(Imagine a sleek modal here with nested logic blocks, dropdowns, and clear action buttons)*
 
-### 🎥 Demo in Action
+<!-- ### 🎥 Demo in Action
 > [!TIP]
 > **View the Interactive Demo Video**
-> [![Watch the video](https://img.shields.io/badge/Video-Play_Demo-red?style=for-the-badge&logo=youtube)](https://your-video-link-here.com)
+> [![Watch the video](https://img.shields.io/badge/Video-Play_Demo-red?style=for-the-badge&logo=youtube)](https://your-video-link-here.com) -->
 
 ---
 

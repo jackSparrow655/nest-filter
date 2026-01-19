@@ -1,16 +1,20 @@
 {
   "name": "nest-filter",
-  "version": "1.0.23",
+  "version": "1.0.25",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "types": "./dist/index.d.ts",
-      "style": "./dist/index.css"
-    }
+      "types": "./dist/index.d.ts"
+    },
+    "./style.css": "./style.css"
   },
+  "files": [
+    "dist",
+    "style.css"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx rollup -c"
