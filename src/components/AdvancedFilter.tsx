@@ -93,7 +93,7 @@ const FilterGroupUI = <T,>({
   return (
     <div
       className={`rounded-lg border border-slate-200 bg-slate-50/50 p-4 mb-4 ${
-        depth > 0 ? "ml-6 md:ml-10 relative border-l-2 border-l-slate-300" : ""
+        depth > 0 ? "ml-10 relative border-l-2 border-l-slate-300" : ""
       }`}
     >
       <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
@@ -163,7 +163,7 @@ const FilterGroupUI = <T,>({
           return item.type === "rule" ? (
             <div
               key={item.id}
-              className="flex flex-col md:flex-row md:items-center gap-3 p-3 bg-white border border-slate-200 rounded-md shadow-sm"
+              className="flex gap-3 p-3 bg-white border border-slate-200 rounded-md shadow-sm"
             >
               <div className="flex-1 min-w-[140px]">
                 <Select
@@ -190,7 +190,7 @@ const FilterGroupUI = <T,>({
                   }}
                 />
               </div>
-              <div className="w-full md:w-44">
+              <div className="w-44">
                 <Select
                   value={item.operator}
                   options={getOperatorsForType(column?.type || "string")}
