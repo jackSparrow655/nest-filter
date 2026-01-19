@@ -21,8 +21,8 @@ export const Dialog: React.FC<DialogProps> = ({
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-20 flex items-start justify-center overflow-y-auto bg-slate-950/80 p-4 pt-[5vh] backdrop-blur-sm animate-in fade-in duration-200 dialog-custom">
-      <div className="relative w-full max-w-4xl rounded-lg border border-slate-200 bg-white p-6 shadow-lg animate-in zoom-in-95 duration-200">
+    <div className="fixed inset-0 z-20 flex items-start justify-center overflow-y-auto bg-black/80 p-4 pt-[5vh] backdrop-blur-sm animate-in fade-in duration-200 dialog-custom">
+      <div className="relative w-full max-w-[700px] rounded-lg border border-slate-200 bg-white p-6 shadow-lg animate-in zoom-in-95 duration-200 dialog-content-custom">
         <div className="flex flex-col space-y-1.5 text-center sm:text-left mb-6">
           <h2 className="text-lg font-semibold leading-none tracking-tight">
             {title}

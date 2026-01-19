@@ -3,6 +3,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.dialog-custom{
+  z-index: 50;
+}
+.select-custom{
+  z-index: 100;
+}
+
+.dialog-content-custom{
+  max-width: 60vw;
+}
+
 /* ===== Global Thin Scrollbar ===== */
 
 /* Firefox */

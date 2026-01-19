@@ -34,7 +34,7 @@ export const Select: React.FC<SelectProps> = ({ value, onValueChange, options, p
         <ChevronDown className={`h-4 w-4 opacity-50 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
       {isOpen && (
-        <div className="absolute top-full left-0 z-50 mt-1 min-w-[8rem] w-full max-h-[200px] overflow-y-auto rounded-md border border-slate-200 bg-white text-slate-950 shadow-xl animate-in fade-in zoom-in-95 duration-100">
+        <div className="absolute top-full left-0 z-50 mt-1 min-w-[8rem] w-full max-h-[200px] overflow-y-auto rounded-md border border-slate-200 bg-white text-slate-950 shadow-xl animate-in fade-in zoom-in-95 duration-100 select-custom">
           <div className="p-1">
             {options.length > 0 ? options.map((opt) => (
               <button

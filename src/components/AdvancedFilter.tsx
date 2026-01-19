@@ -106,7 +106,7 @@ const FilterGroupUI = <T,>({
               onClick={() => onUpdateGroupLogic(group.id, "AND")}
               className={`px-3 py-1 text-[10px] font-black rounded-sm transition-all ${
                 group.logic === "AND"
-                  ? "bg-slate-900 text-slate-50"
+                  ? "bg-slate-900 text-white"
                   : "text-slate-500 hover:text-slate-900"
               }`}
             >
@@ -116,7 +116,7 @@ const FilterGroupUI = <T,>({
               onClick={() => onUpdateGroupLogic(group.id, "OR")}
               className={`px-3 py-1 text-[10px] font-black rounded-sm transition-all ${
                 group.logic === "OR"
-                  ? "bg-slate-900 text-slate-50"
+                  ? "bg-slate-900 text-white"
                   : "text-slate-500 hover:text-slate-900"
               }`}
             >
@@ -163,9 +163,9 @@ const FilterGroupUI = <T,>({
           return item.type === "rule" ? (
             <div
               key={item.id}
-              className="flex gap-3 p-3 bg-white border border-slate-200 rounded-md shadow-sm"
+              className="flex gap-3 p-3 bg-white border border-slate-200 rounded-md shadow-sm w-full"
             >
-              <div className="flex-1 min-w-[140px]">
+              <div className="flex-1 w-1/4">
                 <Select
                   value={item.columnId as string}
                   options={columns.map((c) => ({
@@ -190,7 +190,7 @@ const FilterGroupUI = <T,>({
                   }}
                 />
               </div>
-              <div className="w-44">
+              <div className="w-1/4">
                 <Select
                   value={item.operator}
                   options={getOperatorsForType(column?.type || "string")}
@@ -199,7 +199,7 @@ const FilterGroupUI = <T,>({
                   }
                 />
               </div>
-              <div className="flex-[1.5] min-w-[180px]">
+              <div className="flex-[1.5] w-1/4">
                 {column?.type === "date" ? (
                   <Input
                     type="date"
@@ -430,7 +430,7 @@ export const AdvancedFilter = <T,>({
             </Button>
             <Button
               onClick={handleApply}
-              className="bg-slate-900 font-bold h-11 px-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-slate-900 text-white font-bold h-11 px-10 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
             >
               Apply View
             </Button>
