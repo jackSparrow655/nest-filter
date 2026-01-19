@@ -21,18 +21,18 @@
 
 ---
 
-<!-- ## 📺 Visual Preview
+## 📺 Visual Preview
 
 ### 🖼️ Modal UI
 ![Advanced Filter Modal Placeholder](https://raw.githubusercontent.com/lucide-react/lucide/main/icons/layers.svg) 
-*(Imagine a sleek modal here with nested logic blocks, dropdowns, and clear action buttons)* -->
+*(Imagine a sleek modal here with nested logic blocks, dropdowns, and clear action buttons)*
 
-<!-- ### 🎥 Demo in Action
+### 🎥 Demo in Action
 > [!TIP]
 > **View the Interactive Demo Video**
 > [![Watch the video](https://img.shields.io/badge/Video-Play_Demo-red?style=for-the-badge&logo=youtube)](https://your-video-link-here.com)
 
---- -->
+---
 
 ## 📦 Installation
 
