@@ -1,6 +1,6 @@
 {
-  "name": "nest-filter",
-  "version": "1.0.1",
+  "name": "react-adv-filter",
+  "version": "1.0.7",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

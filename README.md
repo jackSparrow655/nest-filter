@@ -1,5 +1,5 @@
 
-# 🌳 Nest Filter
+# 🌳 REACT ADVANCED FILTER
 
 [![npm version](https://img.shields.io/badge/npm-v1.0.0-blue.svg)](https://www.npmjs.com/package/nest-filter)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -37,7 +37,7 @@
 ## 📦 Installation
 
 ```bash
-npm install nest-filter
+npm install react-adv-filter
 ```
 
 > **Note**: This package requires `lucide-react` for icons and `tailwindcss` for styling.
@@ -48,7 +48,7 @@ npm install nest-filter
 
 ```tsx
 import { useState } from 'react';
-import { AdvancedFilter } from 'nest-filter';
+import { AdvancedFilter } from 'react-adv-filter';
 
 // 1. Define your columns
 const COLUMNS = [
